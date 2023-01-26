@@ -41,9 +41,9 @@ Here is the source code for a minimal example: [example.qmd](example.qmd).
 
 Without running the extension, this is how the document renders:
 
-![bad-output](example_files/bad-output.png)
+![bad-output](resources/bad-output.png)
 
 With the extension, the output becomes:
 
-![good-output](example_files/good-output.png)
+![good-output](resources/good-output.png)
 
