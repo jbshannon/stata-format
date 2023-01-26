@@ -1,0 +1,16 @@
+---
+title: "Stata-format Example"
+filters:
+  - stata-format
+---
+
+## Testing Stata code
+
+```{stata}
+clear all
+set obs 10
+gen x = 1
+list
+```
+
+
