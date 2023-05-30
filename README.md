@@ -6,11 +6,12 @@ code cells such as this:
 
 ````
 ```{stata}
-exit, clear
+sysuse auto
+ttest mpg, by(foreign)
 ```
 ````
 
-the fact that the kernel returns messages as a stream means that Quarto creates a separate
+The fact that the kernel returns messages as a stream means that Quarto creates a separate
 `div` element for each line of output, resulting in many unnecessary newlines that make the
 output hard to read. This extension combines all consecutive text outputs into a single
 `div` and removes all redundant newlines.

@@ -1,5 +1,6 @@
 ---
 title: "Stata-format Example"
+jupyter: stata
 filters:
   - stata-format
 ---
@@ -7,10 +8,8 @@ filters:
 ## Testing Stata code
 
 ```{stata}
-clear all
-set obs 10
-gen x = 1
-list
+sysuse auto
+ttest mpg, by(foreign)
 ```
 
 
